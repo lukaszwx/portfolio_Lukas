@@ -1,224 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Lucas | Desenvolvedor Front-end</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Lucas Neves, desenvolvedor Front-end especializado em HTML, CSS, JavaScript e animações com GSAP.">
-    <meta name="author" content="Lucas Neves">
+  <title>Lucas Neves | Desenvolvedor Front-end</title>
+  <meta name="description" content="Portfólio de Lucas Neves, desenvolvedor Front-end focado em interfaces modernas, UX, performance e animações com GSAP." />
+  <meta name="author" content="Lucas Neves" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/LogoL.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/LogoL.png">
-    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta property="og:title" content="Lucas Neves | Desenvolvedor Front-end" />
+  <meta property="og:description" content="Interfaces modernas com foco em UX, performance e animações." />
+  <meta property="og:type" content="website" />
+  
+  <meta property="og:url" content="https://lukaszwx.github.io/portfolio_Lukas/" />
+  <meta property="og:image" content="assets/preview.png" />
 
-    <!-- Fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/LogoL.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/LogoL.png" />
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<!-- LOADER -->
-<div class="loader">
-    <img src="assets/L.png" alt="Logo Lucas">
-</div>
+  <div class="loader" aria-label="Carregando">
+    <img src="assets/L.png" alt="Logo Lucas" />
+  </div>
 
-<!-- HEADER -->
-<header class="header" id="topo">
-    <img src="assets/L.png" alt="Logo Lucas">
-    <nav>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+  <header class="header" id="topo">
+    <a href="#topo" aria-label="Voltar ao topo">
+      <img src="assets/L.png" alt="Logo Lucas" />
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
-</header>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Desenvolvedor Front-end</h1>
-        <p>
-            Crio interfaces modernas, performáticas e visualmente refinadas,
-            com foco em experiência do usuário e qualidade de código.
+  <main id="conteudo">
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-content">
+        <h1>Lucas Neves</h1>
+        <p class="hero-role">Desenvolvedor Front-end • HTML, CSS, JavaScript, GSAP</p>
+        <p class="hero-desc">
+          Crio interfaces modernas e performáticas, com foco em UX, detalhes visuais e animações.
         </p>
 
         <div class="hero-buttons">
-            <a href="#projetos" class="btn primary">Ver projetos</a>
-            <a href="#contato" class="btn secondary">Contato</a>
+          <a href="#projetos" class="btn primary">Ver projetos</a>
+          <a href="#contato" class="btn secondary">Contato</a>
         </div>
-    </div>
+      </div>
 
-    <div class="hero-visual" aria-hidden="true"></div>
-</section>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
 
-<!-- SOBRE -->
-<section class="section sobre">
-    <h2>Sobre mim</h2>
-    <p>
+    <section class="section sobre" id="sobre">
+      <h2>Sobre mim</h2>
+      <p>
         Sou desenvolvedor Front-end e estudante de Análise e Desenvolvimento de Sistemas,
         com foco na criação de interfaces modernas, funcionais e visualmente refinadas.
         Tenho atenção especial a detalhes, hierarquia visual e microinterações,
         buscando sempre unir estética e usabilidade.
-    </p>
-</section>
+      </p>
+    </section>
 
-<!-- TECNOLOGIAS -->
-<section class="section habilidades">
-    <h2>Tecnologias</h2>
+    <section class="section habilidades" id="habilidades">
+      <h2>Tecnologias</h2>
 
-    <div class="skills">
-        <div><i class="fa-brands fa-html5"></i> HTML5</div>
-        <div><i class="fa-brands fa-css3-alt"></i> CSS3</div>
-        <div><i class="fa-brands fa-js"></i> JavaScript</div>
-        <div><i class="fa-solid fa-bolt"></i> GSAP</div>
-        <div><i class="fa-brands fa-github"></i> Git & GitHub</div>
-    </div>
-</section>
+      <div class="skills" role="list">
+        <div role="listitem"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5 (Semântica, Acessibilidade)</div>
+        <div role="listitem"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3 (Flexbox, Grid, Responsivo, Animações)</div>
+        <div role="listitem"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript (DOM, Eventos, Async/Await, Fetch API)</div>
+        <div role="listitem"><i class="fa-solid fa-bolt" aria-hidden="true"></i> GSAP (ScrollTrigger, Timelines)</div>
+        <div role="listitem"><i class="fa-brands fa-github" aria-hidden="true"></i> Git & GitHub (Versionamento, Colaboração)</div>
+      </div>
+    </section>
 
-<!-- PROJETOS -->
-<section class="section projetos" id="projetos">
-    <h2>Projetos</h2>
+    <section class="section projetos" id="projetos">
+      <h2>Projetos</h2>
 
-    <div class="projects-grid">
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/landing_page.png" alt="Preview do projeto Landing Page de Conversão" loading="lazy" />
+          </div>
 
-        <!-- Projeto 1 -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="assets/landing_page.png" alt="Preview da landing page">
-            </div>
+          <h3>Landing Page de Conversão</h3>
+          <p>Projeto focado em conversão, com design limpo e CTAs estratégicos para engajamento.</p>
 
-            <h4>Landing Page de Conversão</h4>
-            <p>
-                Projeto focado em conversão, com design limpo e CTAs estratégicos para engajamento.
-            </p>
+          <div class="project-buttons">
+            <a href="https://lukaszwx.github.io/landing-page/" target="_blank" rel="noopener noreferrer" class="btn small">
+              Ver projeto
+            </a>
 
-            <div class="project-buttons">
-                <a href="https://lukaszwx.github.io/landing-page/"
-                   target="_self"
-                   rel="noopener noreferrer"
-                   class="btn small">
-                    Ver projeto
-                </a>
+            <button type="button" class="btn small btn-details" data-project="landing">
+              Ver detalhes
+            </button>
+          </div>
+        </article>
 
-                <a href="#"
-                   class="btn small btn-details"
-                   data-project="landing">
-                    Ver detalhes
-                </a>
-            </div>
-        </div>
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/javascriptprojeto.png" alt="Preview do projeto Aplicação JavaScript" loading="lazy" />
+          </div>
 
-        <!-- Projeto 2 -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="assets/javascriptprojeto.png" alt="Dashboard JavaScript">
-            </div>
+          <h3>Aplicação JavaScript</h3>
+          <p>Sistema interativo com manipulação avançada do DOM e animações dinâmicas.</p>
 
-            <h4>Aplicação JavaScript</h4>
-            <p>
-                Sistema interativo com manipulação avançada do DOM e animações dinâmicas.
-            </p>
+          <div class="project-buttons">
+            <a href="https://lukaszwx.github.io/projeto-dashboard/" target="_blank" rel="noopener noreferrer" class="btn small">
+              Ver projeto
+            </a>
 
-            <div class="project-buttons">
-                <a href="https://lukaszwx.github.io/projeto-dashboard/"
-                   target="_self"
-                   rel="noopener noreferrer"
-                   class="btn small">
-                    Ver projeto
-                </a>
+            <button type="button" class="btn small btn-details" data-project="dashboard">
+              Ver detalhes
+            </button>
+          </div>
+        </article>
 
-                <a href="#"
-                   class="btn small btn-details"
-                   data-project="dashboard">
-                    Ver detalhes
-                </a>
-            </div>
-        </div>
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/site%20institucional.png" alt="Preview do projeto Site Institucional" loading="lazy" />
+          </div>
 
-        <!-- Projeto 3 -->
-        <div class="project-card">
-            <div class="project-image">
-                <img src="assets/site%20institucional.png" alt="Site Institucional">
-            </div>
+          <h3>Site Institucional</h3>
+          <p>
+            Site corporativo elegante, com animações refinadas, cards de serviços e equipe, depoimentos e formulário de contato funcional.
+          </p>
 
-            <h4>Site Institucional</h4>
-            <p>
-                Site corporativo elegante, com animações refinadas, cards de serviços e equipe, depoimentos e formulário de contato funcional.
-            </p>
+          <div class="project-buttons">
+            <a href="https://lukaszwx.github.io/projeto-institucional/" target="_blank" rel="noopener noreferrer" class="btn small">
+              Ver projeto
+            </a>
 
-            <div class="project-buttons">
-                <a href="https://lukaszwx.github.io/projeto-institucional/"
-                   target="_self"
-                   rel="noopener noreferrer"
-                   class="btn small">
-                    Ver projeto
-                </a>
+            <button type="button" class="btn small btn-details" data-project="institucional">
+              Ver detalhes
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-                <a href="#"
-                   class="btn small btn-details"
-                   data-project="institucional">
-                    Ver detalhes
-                </a>
-            </div>
-        </div>
+    <section class="section contato" id="contato">
+      <h2>Contato</h2>
 
-    </div>
-</section>
-
-<!-- CONTATO -->
-<section class="section contato" id="contato">
-    <h2>Contato</h2>
-
-    <div class="contact-links">
-        <a href="https://github.com/lukaszwx" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
+      <div class="contact-links" aria-label="Links de contato">
+        <a href="https://github.com/lukaszwx" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
         </a>
 
-        <!-- Botão de Email funcional -->
-        <a href="mailto:ln620416@email.com"
-           aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:lucasnevesdev0@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         </a>
+      </div>
+    </section>
+  </main>
 
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <img src="assets/L.png" alt="Logo Lucas">
+  <footer>
+    <img src="assets/L.png" alt="Logo Lucas" loading="lazy" />
     <p>Lucas Neves</p>
-</footer>
+  </footer>
 
-<!-- MODAL -->
-<div class="modal-overlay" id="projectModal">
-    <div class="modal">
-        <button class="modal-close" aria-label="Fechar modal">✕</button>
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <div class="modal" tabindex="-1">
+      <button class="modal-close" aria-label="Fechar modal" type="button">✕</button>
 
-        <h3 class="modal-title"></h3>
-        <span class="modal-subtitle"></span>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <span class="modal-subtitle"></span>
 
-        <p class="modal-description"></p>
+      <p class="modal-description" id="modalDesc"></p>
 
-        <ul class="modal-list">Tecnologias:</ul>
+      <p class="modal-label">Tecnologias</p>
+      <div class="modal-tech" aria-label="Tecnologias usadas"></div>
 
-        <div class="modal-tech"></div>
-
-        <div class="modal-buttons">
-            <a href="#" target="_blank" class="btn primary modal-demo">Ver Demo</a>
-            <a href="#" target="_blank" class="btn secondary modal-code">Ver Código</a>
-        </div>
+      <div class="modal-buttons">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn primary modal-demo">Ver Demo</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn secondary modal-code">Ver Código</a>
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- SCRIPTS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="main.js"></script>
-
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="main.js"></script>
 </body>
 </html>
+
